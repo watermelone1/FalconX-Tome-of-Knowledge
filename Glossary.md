@@ -1,0 +1,2 @@
+- FMS - Field Management System, responsible for controlling robots during a match. The FMS will start your robot and can Emergency Stop if necessary.
+- PDH - Power Distribution Hub
