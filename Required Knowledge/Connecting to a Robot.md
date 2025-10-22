@@ -4,11 +4,11 @@ At Home. [VH-109 Start Guide](https://frc-radio.vivid-hosting.net/overview/quick
 ---
 Follow the instructions from the Start Guide
 
-ip is 10.66.62.1 i think? or radio.local?
+ip is 10.66.62.2?
 
 At Competition
 ---
-At competitions, the radio connects to the FMS, you must connect to the robot over Ethernet in the DS port of the radio, DIP Switch 3 is opposite as at home VERY IMPORTANT
+At competitions, the radio connects to the FMS, you must connect to the robot over Ethernet in the DS port of the radio, DIP Switch 3 is opposite as at home VERY IMPORTANT (off i think at comp)
 
 Deploying Code
 ---
