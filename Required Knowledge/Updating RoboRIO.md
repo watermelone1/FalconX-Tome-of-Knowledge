@@ -1,0 +1,1 @@
+Updating the RoboRIO is done using the RoboRIO Imaging Tool. uhh i forgor

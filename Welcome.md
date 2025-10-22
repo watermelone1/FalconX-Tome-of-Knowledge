@@ -1,18 +1,18 @@
-Preface
+[[Preface]]
 Required Knowledge
 - [[Required Software]]
 - [[Required Hardware]]
-- Creating a Robot Project
-- Git
+- [[Creating a Robot Project]]
+- [[Git]]
 - [[Connecting to a Robot]]
 - [[Types of Electrical Connections]]
-- Relevant Electrical Components and Terminologies
-- Relevant Mechanical Components and Terminologies
-- Updating RoboRIO
+- [[Relevant Electrical Components and Terminologies]]
+- [[Relevant Mechanical Components and Terminologies]]
+- [[Updating RoboRIO]]
 Primary Types
-- Subsystems
+- [[Subsystems]]
 - Commands
-- Robot Container
+- RobotContainer.java
 - Robot.java
 Primary Concepts
 - PID Control

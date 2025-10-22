@@ -1,2 +1,7 @@
-- FMS - Field Management System, responsible for controlling robots during a match. The FMS will start your robot and can Emergency Stop if necessary.
-- PDH - Power Distribution Hub
+- CAN - Controlled Area Network - Sends information between components.
+- **DIO** - Digital Input Output. Connects a digital sensor to the RIO. The RIO has 10 DIO Ports.
+- **FMS** - Field Management System, responsible for controlling robots during a match. The FMS will start your robot and can Emergency Stop if necessary.
+- **PDH** - Power Distribution Hub. Distributes power throughout the robot. Contains ports for motors and various voltages and amperages.
+- **PWM** - Pulse Width Modulation. Can send pulses extremely quickly to represent analog values. The RIO has 10 PWM Ports
+- RSL - Robot Safety Light. Indicates the current state of the robot.
+- **VRM** - Voltage Regulator Module. Contains more voltage and amperage options than the PDH

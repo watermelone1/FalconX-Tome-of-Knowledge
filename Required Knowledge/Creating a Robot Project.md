@@ -1,0 +1,5 @@
+Robot projects can be created using the project builder in VSCode. In the Command Palette there is an option for `New Robot Project` which opens the project builder. We use the java Timed Robot Template. A project must have a team number and directory. 
+
+To install libraries to you project, WPILib provides a library manager on the side panel. It will give an option to install most common FRC libraries. When installing libraries a build must first be done with internet, however, MDUSD blocks whatever connection they need and you need to use a hotspot.
+
+Some libraries may not show up in the library manager, in that case you need to open the Command Palette and choose `Manage Vendor Libraries > Install Libraries (Online)` and provide a link to the library file which you can usually find on the providers website.
