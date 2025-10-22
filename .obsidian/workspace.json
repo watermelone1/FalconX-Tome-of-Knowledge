@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Required Knowledge/Connecting to a Robot.md",
+                "file": "Primary Types/Commands.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Connecting to a Robot"
+              "title": "Commands"
             }
           }
         ],
@@ -181,28 +181,29 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "webpage-html-export:Export as HTML": false
     }
   },
   "active": "721f75c9ee00ccee",
   "lastOpenFiles": [
-    "Primary Types/Commands.md",
-    "Required Knowledge/Connecting to a Robot.md",
+    "README.md",
+    "Untitled 1.base",
+    "Welcome.md",
+    "Untitled.base",
+    "Preface.md",
+    "Glossary.md",
+    "Required Knowledge/Relevant Mechanical Components and Terminologies.md",
+    "Required Knowledge/Updating RoboRIO.md",
     "Required Knowledge/Creating a Robot Project.md",
     "Required Knowledge/Git.md",
-    "Required Knowledge/Relevant Electrical Components and Terminologies.md",
-    "Required Knowledge/Relevant Mechanical Components and Terminologies.md",
-    "Required Knowledge/Required Hardware.md",
     "Required Knowledge/Required Software.md",
+    "Required Knowledge/Required Hardware.md",
     "Required Knowledge/Types of Electrical Connections.md",
-    "Required Knowledge/Updating RoboRIO.md",
-    "Glossary.md",
-    "Preface.md",
-    "README.md",
-    "Welcome.md",
     "Primary Types/Subsystems.md",
-    "Untitled 1.base",
-    "Untitled.base",
+    "Required Knowledge/Relevant Electrical Components and Terminologies.md",
+    "Primary Types/Commands.md",
+    "Required Knowledge/Connecting to a Robot.md",
     "appearance.css",
     "New Text Document.txt",
     "appearance.css.md",

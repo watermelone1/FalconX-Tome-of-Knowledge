@@ -5,7 +5,7 @@ A Command class is made by extending `Command`
 
 Commands have some important methods that should be overridden. Notably `execute()`, `initialize()`, `isFinished()`, and `end()`
 
-I will show po0with an example command and then explain its components. This example is a simplified version of the `AutoRotate` command from our 2024 robot. This command would orient the robot to the correct target by using the camera to find the angle to the target, and then automatically rotating to it
+I will show with an example command and then explain its components. This example is a simplified version of the `AutoRotate` command from our 2024 robot. This command would orient the robot to the correct target by using the camera to find the angle to the target, and then automatically rotating to it
 
 ```java
 public class AutoRotate extends Command {
