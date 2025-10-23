@@ -9,11 +9,11 @@ Required Knowledge
 - [[Relevant Electrical Components and Terminologies]]
 - [[Relevant Mechanical Components and Terminologies]]
 - [[Updating RoboRIO]]
-Primary Types
+Primary Classes
 - [[Subsystems]]
-- Commands
-- RobotContainer.java
-- Robot.java
+- [[Commands]]
+- [[RobotContainer.java]]
+- [[Robot.java]]
 Primary Concepts
 - PID Control
 - Autonomous
@@ -25,6 +25,7 @@ Primary Concepts
 - Logging
 Mechanisms/Hardware
 - Drivetrains
+	- Swerve Drive
 - Elevators
 - Rotating Arms
 - Linear Arms

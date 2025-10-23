@@ -8,35 +8,49 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9043f22227cdfc9e",
+            "id": "128ee7cf830e9278",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Primary Types/Commands.md",
+                "file": "Welcome.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Commands"
+              "title": "Welcome"
             }
           },
           {
-            "id": "721f75c9ee00ccee",
+            "id": "9b6d891be5ffde04",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Primary Types/Commands.md",
+                "file": "Welcome.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Commands"
+              "title": "Welcome"
+            }
+          },
+          {
+            "id": "3e2613711043ad9c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Primary Concepts/PID Control.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PID Control"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -185,24 +199,30 @@
       "webpage-html-export:Export as HTML": false
     }
   },
-  "active": "721f75c9ee00ccee",
+  "active": "3e2613711043ad9c",
   "lastOpenFiles": [
+    "PID_Compensation_Animated-1.gif",
+    "PID_Compensation_Animated.gif",
+    "Required Knowledge/Relevant Mechanical Components and Terminologies.md",
+    "Primary Concepts/PID Control.md",
+    "Welcome.md",
+    "Primary Concepts",
+    "Primary Types/Robot.java.md",
+    "Untitled.base",
+    "Primary Types/RobotContainer.java.md",
+    "Primary Types/Commands.md",
+    "Preface.md",
+    "Primary Types/Subsystems.md",
+    "Required Knowledge/Required Hardware.md",
+    "Required Knowledge/Required Software.md",
+    "Required Knowledge/Updating RoboRIO.md",
+    "Required Knowledge/Types of Electrical Connections.md",
     "README.md",
     "Untitled 1.base",
-    "Welcome.md",
-    "Untitled.base",
-    "Preface.md",
     "Glossary.md",
-    "Required Knowledge/Relevant Mechanical Components and Terminologies.md",
-    "Required Knowledge/Updating RoboRIO.md",
     "Required Knowledge/Creating a Robot Project.md",
     "Required Knowledge/Git.md",
-    "Required Knowledge/Required Software.md",
-    "Required Knowledge/Required Hardware.md",
-    "Required Knowledge/Types of Electrical Connections.md",
-    "Primary Types/Subsystems.md",
     "Required Knowledge/Relevant Electrical Components and Terminologies.md",
-    "Primary Types/Commands.md",
     "Required Knowledge/Connecting to a Robot.md",
     "appearance.css",
     "New Text Document.txt",

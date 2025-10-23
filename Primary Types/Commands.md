@@ -81,63 +81,63 @@ public class AutoRotate extends Command {
 Next the constructor, when we create the command, we supply it with the subsystems it needs. we also use `addRequirements()` to tell the drivetrain that this command is being run. It is important to note that when you call a command it **automatically cancels** any other command that subsystem is using. In this case, the vision has its own command that needs to run at all times, for this reason we don't add it to requirements, usually this is not best practice and should be avoided.
 
 ```java
-    public AutoRotate(Drivetrain drivetrain, Vision vision) {
-        drivetrain = drivetrain;
-        vision = vision;
-        gyro = drivetrain.getGyro();
-        addRequirements(drivetrain); // Don't put vision in requirements or else the command will be canceled
-    }
+public AutoRotate(Drivetrain drivetrain, Vision vision) {
+	drivetrain = drivetrain;
+	vision = vision;
+	gyro = drivetrain.getGyro();
+	addRequirements(drivetrain); // Don't put vision in requirements or else the command will be canceled
+}
 ```
 
 The `initialize()` method is automatically called the *first* time to command is scheduled. We use it to set up any variables before the command runs. In this example we use it to set up the correct angle as well as set up PID.
 
 ```java
-    @Override
-    public void initialize() {
-        if (vision.hasCorrectTargets()) {
-            distanceToRotate = -vision.getYaw().get(); // Measured in degrees
-        }
-        double cameraOffset = 10; // Not sure what this number meant, i think it was the angle the camera was pointed at
-        
-        pid.setSetpoint(gyro.getYaw() + distanceToRotate + cameraOffset); // Set up PID
-        pid.setTolerance(0.5);
-    }
+@Override
+public void initialize() {
+	if (vision.hasCorrectTargets()) {
+		distanceToRotate = -vision.getYaw().get(); // Measured in degrees
+	}
+	double cameraOffset = 10; // Not sure what this number meant, i think it was the angle the camera was pointed at
+	
+	pid.setSetpoint(gyro.getYaw() + distanceToRotate + cameraOffset); // Set up PID
+	pid.setTolerance(0.5);
+}
 ```
 
 The `execute()` method runs every time the command is scheduled, every 20ms (50/s). It is meant to handle the logic of running the command. Most things that control the subsystems should be part of the `execute()` method.
 
 ```java
-    @Override
-    public void execute() {
-        if (vision.hasCorrectTargets()) {
-            distanceToRotate = -vision.getYaw().get();
-        }
-	    
-	    // Calculate rotation speed
-        double rotateSpeed = pid.calculate(gyro.getYaw());
-        rotateSpeed += feedforward * Math.signum(rotateSpeed);
-        rotateSpeed = MathUtil.clamp(rotateSpeed, -1, 1);
-        
-        // If its already there dont move
-        if (pid.atSetpoint()) {rotateSpeed = 0;}
-        
-        // move
-        drivetrain.curvatureDrive(0, rotateSpeed, false, true);
-        
-        // Log results
-        DashboardHelper.putNumber(LogLevel.Debug, "Auto Rotate Rotate Speed", rotateSpeed);
-        DashboardHelper.putNumber(LogLevel.Debug, "Auto Rotate Distance from setpoint", pid.getPositionError());
-    }
+@Override
+public void execute() {
+	if (vision.hasCorrectTargets()) {
+		distanceToRotate = -vision.getYaw().get();
+	}
+	
+	// Calculate rotation speed
+	double rotateSpeed = pid.calculate(gyro.getYaw());
+	rotateSpeed += feedforward * Math.signum(rotateSpeed);
+	rotateSpeed = MathUtil.clamp(rotateSpeed, -1, 1);
+	
+	// If its already there dont move
+	if (pid.atSetpoint()) {rotateSpeed = 0;}
+	
+	// move
+	drivetrain.curvatureDrive(0, rotateSpeed, false, true);
+	
+	// Log results
+	DashboardHelper.putNumber(LogLevel.Debug, "Auto Rotate Rotate Speed", rotateSpeed);
+	DashboardHelper.putNumber(LogLevel.Debug, "Auto Rotate Distance from setpoint", pid.getPositionError());
+}
 ```
 
 `isFinished()` does not control normal robot logic. It tells the command when to stop. It is called before `execute()` and if it returns `true` then the command ends and calls the `end()` function. If any thing needs to happen when the command ends, make sure to include `end()`. In this case, the command should end automatically if there are no targets, or if the robot is close enough to make the shot.
 
 ```java
-    @Override
-    public boolean isFinished() {
-        if (!mision.hasCorrectTargets()) return true; // Camera has no targets, cannot orient properly
-        return Math.abs(distanceToRotate) < 0.02; // Robot is close enough
-    }
+@Override
+public boolean isFinished() {
+	if (!mision.hasCorrectTargets()) return true; // Camera has no targets, cannot orient properly
+	return Math.abs(distanceToRotate) < 0.02; // Robot is close enough
+}
 ```
 
 There are a few different ways to use commands. All subsystems should have a default command using `Subsystem.setDefaultCommand()`. This will run the command as long as no others override it. It also will restart once it is able to.
