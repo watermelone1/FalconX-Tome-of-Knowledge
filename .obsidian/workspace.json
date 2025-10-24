@@ -107,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 330.5
   },
   "right": {
     "id": "96336a4ad13e73c0",
@@ -201,10 +201,19 @@
   },
   "active": "3e2613711043ad9c",
   "lastOpenFiles": [
-    "PID_Compensation_Animated-1.gif",
-    "PID_Compensation_Animated.gif",
-    "Required Knowledge/Relevant Mechanical Components and Terminologies.md",
+    "PID Tuning.gif",
     "Primary Concepts/PID Control.md",
+    "The PID Loop.png",
+    "Pasted image 20251023012456.png",
+    "Pasted.md",
+    "Pasted image 20251023012330.png",
+    "Pasted image 20251023012417.png",
+    "Pasted image 20251023012413.png",
+    "Pasted image 20251023012338.png",
+    "Pasted image 20251023012334.png",
+    "Pasted image 20251023012331.png",
+    "PID_Compensation_Animated-1.gif",
+    "Required Knowledge/Relevant Mechanical Components and Terminologies.md",
     "Welcome.md",
     "Primary Concepts",
     "Primary Types/Robot.java.md",
@@ -230,7 +239,6 @@
     "Primary Types",
     "Relevant Electrical Components and Terminologies.md",
     "2025-04-18.md",
-    "image.avif",
     "Required Knowledge"
   ]
 }
